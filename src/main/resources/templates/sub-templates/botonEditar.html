@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <section th:replace="plantilla :: head"></section>
+</head>
+<body>
+    <section th:fragment="btnEditar" class="">
+        <div id="acciones">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3" sec:authorize="hasRole{'ROLE_ADMIN'}">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
